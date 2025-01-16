@@ -14,7 +14,7 @@
 ![输入图片说明](1000072339.jpg)
  
 2.  手机端
-https://gitee.com/hisamo/sa.mo/raw/master/1000072337.png
+![输入图片说明](1000072337.png)
 
 #### 未来计划
 
