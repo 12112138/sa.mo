@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>
+            Hi Sa.mo
+        </title>
+        <meta name="description" content="Hi Sa.mo">
+        <meta name="keywords" content="Hi Sa.mo">
+       
+        <link rel="icon" href="./static/image/tx.jpg">
+     
+        <link rel="preload" href="./static/css/02122d4af6787af6.css" as="style">
+        <link rel="stylesheet" href="static/css/02122d4af6787af6.css" data-n-g="">
+        <link rel="preload" href="static/css/f6818c176fa1363b.css" as="style">
+        <link rel="stylesheet" href="static/css/f6818c176fa1363b.css" data-n-p="">
+       
+        <script defer="" nomodule="" src="./static/js/polyfills-c67a75d1b6f99dc8.js">
+        </script>
+        <script src="./static/js/webpack-8fa1640cc84ba8fe.js" defer="">
+        </script>
+        <script src="./static/js/framework-2185d941be69c243.js" defer="">
+        </script>
+        <script src="./static/js/main-71220c1e4946f592.js" defer="">
+        </script>
+        <script src="./static/js/_app-9bbaf76bf4727407.js" defer="">
+        </script>
+        <script src="static/js/174-926c229d0c6cf6ba.js" defer="">
+        </script>
+        <script src="./static/js/index-2dff494667b7a203.js" defer="">
+        </script>
+        <script src="static/js/_buildManifest.js" defer="">
+        </script>
+        <script src="./static/js/_ssgManifest.js" defer="">
+        
+        </script>
+        
+
+        
+        
+        
+        
+
+ 
+    </head>
+    
+    <body>
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+         
+  <!-- 特效开始 -->
+<style>
+
+    #background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none; /* Make sure the background doesn't interfere with other elements */
+    }
+ 
+    .rectangle {
+      position: absolute;
+      width: 20px;
+      border-radius: 5px;
+      opacity: 0.9;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      animation: moveUp linear infinite;
+    }
+ 
+    @keyframes moveUp {
+      from {
+        transform: translateY(110vh);
+      }
+      to {
+        transform: translateY(-10%);
+      }
+    }
+  </style>
+
+ 
+  <div id="background-container"></div>
+ 
+  <script>
+    // 生成更多长方形并设置随机位置、宽度、颜色、速度
+    for (let i = 0; i < 50; i++) {
+      createRandomRectangle();
+    }
+ 
+    function createRandomRectangle() {
+      const rectangle = document.createElement('div');
+      rectangle.className = 'rectangle';
+      setRandomProperties(rectangle);
+ 
+      document.getElementById('background-container').appendChild(rectangle);
+    }
+ 
+    function setRandomProperties(element) {
+      element.style.top = getRandomPosition() + 'vh';
+      element.style.left = getRandomPosition() + 'vw';
+      element.style.height = getRandomWidth() + 'px';
+      element.style.background = getRandomGradient();
+      element.style.boxShadow = getRandomShadow();
+      element.style.animationDuration = getRandomSpeed() + 's';
+    }
+ 
+    function getRandomPosition() {
+      return Math.random() * 30; // 调整这里以控制随机位置的范围
+    }
+ 
+    function getRandomWidth() {
+      return Math.random() * 1 + 10; // 调整这里以控制随机宽度的范围
+    }
+ 
+    function getRandomGradient() {
+      const angle = Math.random() * 10 + 60; // 30度到60度之间
+      const color1 = getRandomWarmColor();
+      const color2 = getRandomWarmColor();
+      return `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+    }
+ 
+    function getRandomWarmColor() {
+      const ratio = Math.random(); // 随机选择是暖色调还是冷色调
+      const warmColors = [
+        '#FF6347', '#FFA07A', '#FFD700', '#FF8C00', '#FF4500',
+        '#FF7F50', '#FFDAB9', '#FFB6C1', '#FF69B4', '#FF1493'
+      ]; // 暖色调颜色
+      const coldColors = [
+        '#87CEEB', '#00BFFF', '#1E90FF', '#4682B4', '#5F9EA0',
+        '#ADD8E6', '#B0C4DE', '#87CEFA', '#6495ED', '#4169E1'
+      ]; // 冷色调颜色
+ 
+      return ratio < 0.8 ? warmColors[Math.floor(Math.random() * warmColors.length)] : coldColors[Math.floor(Math.random() * coldColors.length)];
+    }
+ 
+    function getRandomShadow() {
+      const offsetX = Math.random() * 5;
+      const offsetY = Math.random() * 5;
+      const blurRadius = Math.random() * 10;
+      const color = 'rgba(0, 0, 0, 0.2)';
+      return `${offsetX}px ${offsetY}px ${blurRadius}px ${color}`;
+    }
+ 
+    function getRandomSpeed() {
+      return Math.random() * 20 + 1; // 调整这里以控制随机速度的范围
+    }
+  </script>
+        
+        <div id="__next">
+            <div class="relative dark">
+  <!-- 特效结束 -->
+
+ 
+  <!-- 在这里添加其他你的代码 -->
+
+<div class="fixed block md:hidden w-full h-full opacity-20" style="position:absolute;background-repeat:no-repeat;z-index:-1;background-image:url(./static/image/sjbg.jpg);background-size:auto 450px;background-position:right -250px top -5%;background-attachment:fixed">
+                </div>
+                <div class="fixed hidden md:block w-full h-full opacity-100 dark:opacity-80"
+                
+                
+                
+                
+                
+                style="position:absolute;background-repeat:no-repeat;z-index:-1;background-image:url(./static/image/dnbg.jpg);background-size:auto 100%;background-position:right -50px top -5%;background-attachment:fixed">
+                </div>
+  
+
+                <div class="flex flex-col max-w-4xl mx-auto pt-20 px-8 md:px-4 customer-index border-black dark:border-white font-mono">
+                    <div class="flex flex-row items-center justify-start">
+                        <img alt="Hi Sa.mo" srcset="./static/image/tx.jpg 1x,"
+                        src="./static/image/tx.jpg" width="100" height="100" decoding="async"
+                        data-nimg="1" class="rounded-3xl shadow-2xl" loading="lazy" style="color:transparent">
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="text-4xl md:text-6xl font-bold md:block w-auto md:w-1/2 border-black mt-24 md:mt-24 font-mono">
+                        <div class="flex flex-row items-center justify-start relative ">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <h1 class="Home_title-text-color__CIXYE">
+                                Hi Sa.mo
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+
+  
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                            </h1>
+                            
+                           
+                            <p class="ml-2">
+                                
+                                
+                                
+                                
+                                
+                                
+                                 
+                            </p>
+                             
+                            
+                            <style>
+    /* 定义一个名为wave的动画，改变元素的transform属性实现左右移动 */
+    @keyframes wave {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(10px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+   .wave-emoji {
+      font-size: 35px;
+      animation: wave 1s infinite; /* 应用动画，持续1秒，无限循环 */
+    }
+  </style>
+
+
+
+  <span class="waving-hand">👋</span>
+
+     <script>
+    // 获取表情元素
+    const handEmoji = document.querySelector('.waving-hand');
+    let angle = 0; // 初始倾斜角度为0
+    setInterval(() => {
+      // 每次改变一定的角度，这里设置为每次增加5度，你可以调整这个值来改变摆动幅度
+      angle += 1;
+      // 将角度限制在一定范围内（比如0到30度之间来回摆动），实现类似摆动效果
+      if (angle > 6) {
+        angle = 0;
+      }
+      // 使用CSS的transform属性来设置倾斜角度，rotate是旋转（倾斜）的意思，单位是deg（度）
+      handEmoji.style.transform = `rotate(${angle}deg)`;
+    }, 88); // 每100毫秒（0.1秒）更新一次角度，改变倾斜状态，你可以调整这个时间间隔来改变摆动速度
+  </script>      
+                                               
+                            
+                            
+                            
+                            
+                    
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="Home_customerindex__2IZnI dark:bg-none mt-8 md:mt-2 w-full md:w-2/3 rounded-3xl p-4 sm:p-8 -ml-0 md:-ml-8 border lg:border-0 font-light text-base font-mono">
+                        <p class="">
+                            🌞 Me.
+                        </p>
+                         
+                         
+                        <p class="mt-4 ">
+                            💼 
+                            <del>
+                                职业：无
+                            </del>
+                          <br>
+                            <br>
+                        <p class="">
+                            📍 GZ.GuiYang
+                        </p>
+                            <br>
+                           <p class="">
+                            📩 160790431@qq.com
+                        </p>
+                            <span class="text-lg font-extrabold">
+                                 <br>  
+                                   
+
+                                 
+                                 <div class="wave-emoji">梦想就算做咸鱼，也要做最咸的那条🐟</div>
+                                 
+                                 
+                                                         <style>
+    /* 定义一个名为wave的动画，改变元素的transform属性实现左右移动 */
+    @keyframes wave {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(10px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+   .wave-emoji {
+      font-size: 15px;
+      animation: wave 1s infinite; /* 应用动画，持续1秒，无限循环 */
+    }
+  </style>
+
+
+
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                
+                            </span>
+             
+                            
+           
+                        
+                        
+                        
+                        
+                        
+                        <p class="mt-4 text-stone-500 text-xs">
+                             <p class="">
+                       
+                        
+                            🤯 我的故事.
+                        </p>
+                        <p class="mt-2 text-stone-500 text-xs">
+                            ✨ 搭上了00后的首班车，来到了这个所谓的21世纪。网络时代的爬虫，熟悉Z-blog、Discuz、PHPwind、WordPress等开源程序；
+
+擅长Ai、Fw、Fl、Br、Ae、Pr、Id、PS等软件的安装与卸载；
+                        </p>
+                        
+                         <p class="mt-2 text-stone-500 text-xs">
+                            👨🏼‍🔧 精通CSS、JavaScript、PHP、C、C＋＋、C#、java、Ruby、Perl、Lisp、python、Objective-C、ActionScript等单词的拼写；
+
+熟悉windows、Linux、Mac、Android、IOS等系统的开关机；
+                        </p>
+                        
+                        <p class="mt-2 text-stone-500 text-xs">
+                            🤪 更是爱奇艺、优酷、腾讯、拼多多、饿了么、美团等多家平台VIP会员，其实我也想低调，但实力不允许啊~
+                        </p>
+                        <p class="mt-2 text-stone-500 text-xs">
+                            <del>
+                                ❗ 对网站建站略懂一二，对电子商务一知半解 !
+                            </del>
+                        </p>
+                        <div class="flex flex-row mt-16 items-baseline">
+                            <a target="_blank" href="https://sa.mo.cn">
+                                <button class="bg-violet-700 text-white text-xl font-light px-6 py-2 rounded-3xl hover:bg-gray-800 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-500">
+                                    📔日记
+                                </button>
+                            </a>
+                            <a target="_blank" href="">
+                                <div class="font-thin text-gray-500 hover:bg-gray-500 px-6 py-2 ml-4 md:ml-12 hover:text-violet-700 hover:border-violet-700 underline duration-1000 ease-in-out rounded-3xl ">
+                                    实验室
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-24 font-light">
+                        <h2 class="text-2xl border-b inline font-bold">
+                            # 朋友们 FRIENDS
+                        </h2>
+                        <ul class="flex flex-row flex-wrap mt-2">
+                            <a target="_blank" href="">
+                                <li class="ransition ease-in-out delay-150 hover:scale-110 hover:bg-indigo-500 duration-300 m-2 md:m-6 ml-0 md:ml-0 px-6 py-3 shadow-2xl rounded-3xl bg-black text-white dark:bg-slate-900 ">
+                                    蓝兮笔记
+                                </li>
+                            </a>
+                            <a target="_blank" href="">
+                                <li class="ransition ease-in-out delay-150 hover:scale-110 hover:bg-indigo-500 duration-300 m-2 md:m-6 ml-0 md:ml-0 px-6 py-3 shadow-2xl rounded-3xl bg-blue-600">
+                                    阡陌
+                                </li>
+                            </a>
+                            <a target="_blank" href="">
+                                <li class="ransition ease-in-out delay-150 hover:scale-110 hover:bg-indigo-500 duration-300 m-2 md:m-6 ml-0 md:ml-0 px-6 py-3 shadow-2xl rounded-3xl bg-sky-600">
+                                   小丫
+                                </li>
+                            </a>
+                            <a target="_blank" href="">
+                                <li class="ransition ease-in-out delay-150 hover:scale-110 hover:bg-indigo-500 duration-300 m-2 md:m-6 ml-0 md:ml-0 px-6 py-3 shadow-2xl rounded-3xl bg-slate-100 dark:bg-slate-900">
+                                    大海牛
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="my-8">
+                        <h2 class="text-2xl border-b inline font-bold">
+                            🐣 日常 DAILY LIFE
+
+                     <div class="pb-8 flex flex-col md:flex-row md:flex-wrap">
+                            <div class="pr-0 md:pr-1 w-full md:w-1/2">
+                                <div class=" w-full rounded-3xl shadow-2xl mt-2 h-80 w-full transition duration-1000 ease-in-out hover:-translate-x-4"
+                                style="background-image:url(https://buemo.cn/wp-content/uploads/2024/11/a3LbNBzueiTZ4LBnCM2c.jpg);background-size:cover;background-repeat:no-repeat">
+                                    <div class="w-full hover:translate-x-4 hover:scale-130 text-white h-full p-8 md:p-10 rounded-3xl flex flex-col justify-end bg-black bg-opacity-70 hover:bg-opacity-0 transition duration-1000 ease-in-out text-sm hover:opacity-80">
+                                        <p class="">
+                                            "路边烧烤摊"
+                                        </p>
+                                        <p>
+                                            -2024.12
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pl-0 md:pl-1 w-full md:w-1/2">
+                                <div class=" w-full rounded-3xl shadow-2xl mt-2 h-80 w-full transition duration-1000 ease-in-out hover:translate-x-4"
+                                style="background-image:url(https://buemo.cn/wp-content/uploads/2024/11/20241130232722934.jpg);background-size:cover;background-repeat:no-repeat">
+                                    <div class="w-full hover:translate-x-4 hover:scale-130 text-white h-full p-8 md:p-10 rounded-3xl flex flex-col justify-end bg-purple-900 bg-opacity-70 hover:bg-opacity-0 transition duration-1000 ease-in-out text-sm hover:opacity-80">
+                                        <p class="mt-10 md:mt-40 px-5 ">
+                                           "骑车到高坡 藤原豆腐 看起来好像羊村~"
+                                        </p>
+                                        <p class="px-5 ">
+                                            -2024.8
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" w-full rounded-3xl shadow-2xl mt-2 h-80 w-full transition duration-1000 ease-in-out hover:translate-y-2"
+                            style="background-image:url(./static/picture/c.jpg);background-size:cover;background-repeat:no-repeat">
+                                <div class="w-full hover:translate-x-4 hover:scale-130 text-white h-full p-8 md:p-10 rounded-3xl flex flex-col justify-end bg-blue-900 bg-opacity-70 hover:bg-opacity-0 transition duration-1000 ease-in-out text-sm hover:opacity-80">
+                                    <p class="">
+                                     
+                                        <span class=" opacity-20">
+                                          
+                                        </span>
+                                     我的座驾.
+                                    </p>
+                                    <p class="">
+                                        2024.05
+                                    </p>
+                                </div>
+                            </div>
+                            <div class=" w-full rounded-3xl shadow-2xl mt-2 h-80 w-full transition duration-1000 ease-in-out hover:translate-y-2"
+                            style="background-image:url(./static/picture/yx.jpg);background-position:left 0px top 0px;background-size:cover;background-repeat:no-repeat">
+                                <div class="w-full hover:translate-x-4 hover:scale-130 text-white h-full p-8 md:p-10 rounded-3xl flex flex-col justify-end bg-black bg-opacity-70 hover:bg-opacity-0 transition duration-1000 ease-in-out text-sm hover:opacity-80">
+                                    <p class="mt-10 md:mt-40 px-5 md:px-24">
+                                        and 爱好.
+                                     和平精英   &amp; 王者荣耀
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="my-32">
+                        <div class="mb-8 ">
+                            <h2 class="text-2xl border-b inline font-bold">
+                                 新年快乐
+                            </h2>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                👉 is
+                                <a class=" text-sky-500 underline" href="">
+                                    hi sa.mo
+                                </a>
+                                🌱<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KglNqUkG0Y6E2nfC",ck:"KglNqUkG0Y6E2nfC"})</script>                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </body>
+
+</html>
+
+
